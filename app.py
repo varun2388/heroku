@@ -8,10 +8,11 @@ Created on Thu Nov  7 17:46:20 2019
 
 from flask import Flask,render_template,url_for,request
 import pandas as pd 
-import pickle
+#import pickle
+import gunicorn
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
-import joblib
+#import joblib
 
 
 app = Flask(__name__)
